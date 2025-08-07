@@ -23,8 +23,16 @@ setLogLevel(options.level);
 try {
   let results = await measure(options);
 
-  console.log("\nMeasurement completed successfully!\nPerformance Results:");
-  console.log(formatResults(results));
+  console.log(
+    `
+Measurement completed successfully!
+
+# Performance Results
+
+${formatResults(results)}
+
+`,
+  );
   process.exit(0);
 } catch (err) {
   console.error("Measurement failed:", err.message);

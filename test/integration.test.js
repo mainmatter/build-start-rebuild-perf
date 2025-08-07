@@ -2,7 +2,7 @@ import { promises as fs } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { execa } from "execa";
-import { beforeAll, beforeEach, afterEach, afterAll, describe, expect, it } from "vitest";
+import { afterAll, afterEach, beforeAll, beforeEach, describe, expect, it } from "vitest";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const projectRoot = resolve(__dirname, "..");
@@ -56,7 +56,7 @@ describe("Integration Tests", () => {
     beforeEach(async () => {
       try {
         await execa("pkill", ["-f", "ember"], { reject: false });
-        await new Promise(resolve => setTimeout(resolve, 1000));
+        await new Promise((resolve) => setTimeout(resolve, 1000));
       } catch {
         // Ignore errors - no processes to kill is fine
       }
@@ -66,7 +66,7 @@ describe("Integration Tests", () => {
       try {
         // More aggressive cleanup
         await execa("pkill", ["-9", "-f", "ember"], { reject: false });
-        await new Promise(resolve => setTimeout(resolve, 1000));
+        await new Promise((resolve) => setTimeout(resolve, 1000));
       } catch {
         // Ignore errors - no processes to kill is fine
       }
@@ -134,17 +134,17 @@ describe("Integration Tests", () => {
 
           const checkOutput = (data) => {
             const output = data.toString();
-            
+
             // First look for build completion
             if (output.includes("Build successful") || output.includes("built in")) {
               hasSeenBuild = true;
             }
-            
+
             // Then look for server ready message
-            if (hasSeenBuild && (
-                output.includes("Serving on") || 
-                output.includes("http://localhost:4200")
-            )) {
+            if (
+              hasSeenBuild &&
+              (output.includes("Serving on") || output.includes("http://localhost:4200"))
+            ) {
               clearTimeout(timeout);
               resolve();
             }
@@ -166,38 +166,38 @@ describe("Integration Tests", () => {
         expect(serverProcess.pid).toBeTypeOf("number");
       } finally {
         // Clean up - use aggressive process termination
-        if (serverProcess && serverProcess.pid && !serverProcess.killed) {
+        if (serverProcess?.pid && !serverProcess.killed) {
           try {
             // First try graceful shutdown
             controller.abort();
-            await new Promise(resolve => setTimeout(resolve, 1000));
-            
+            await new Promise((resolve) => setTimeout(resolve, 1000));
+
             // If still running, force kill the process group
             if (!serverProcess.killed) {
               try {
                 // Kill the entire process group (negative PID)
-                process.kill(-serverProcess.pid, 'SIGTERM');
-                await new Promise(resolve => setTimeout(resolve, 500));
-                
+                process.kill(-serverProcess.pid, "SIGTERM");
+                await new Promise((resolve) => setTimeout(resolve, 500));
+
                 // Force kill if still running
                 if (!serverProcess.killed) {
-                  process.kill(-serverProcess.pid, 'SIGKILL');
+                  process.kill(-serverProcess.pid, "SIGKILL");
                 }
-              } catch (killError) {
+              } catch (_killError) {
                 // Fallback to killing just the main process
                 try {
-                  serverProcess.kill('SIGTERM');
-                  await new Promise(resolve => setTimeout(resolve, 500));
+                  serverProcess.kill("SIGTERM");
+                  await new Promise((resolve) => setTimeout(resolve, 500));
                   if (!serverProcess.killed) {
-                    serverProcess.kill('SIGKILL');
+                    serverProcess.kill("SIGKILL");
                   }
                 } catch (fallbackError) {
-                  console.warn('Failed to kill server process:', fallbackError.message);
+                  console.warn("Failed to kill server process:", fallbackError.message);
                 }
               }
             }
           } catch (cleanupError) {
-            console.warn('Error during server cleanup:', cleanupError.message);
+            console.warn("Error during server cleanup:", cleanupError.message);
           }
         }
       }
@@ -235,9 +235,9 @@ describe("Integration Tests", () => {
 // Global cleanup after all tests
 afterAll(async () => {
   try {
-    // Kill any remaining ember processes  
+    // Kill any remaining ember processes
     await execa("pkill", ["-f", "ember"], { reject: false });
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    await new Promise((resolve) => setTimeout(resolve, 1000));
   } catch {
     // Ignore errors
   }

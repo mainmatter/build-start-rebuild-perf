@@ -256,7 +256,7 @@ describe("PerformanceMeasurement", () => {
       const module = await import("../lib/measure.js");
 
       expect(typeof module.measure).toBe("function");
-      expect(typeof module.printResults).toBe("function");
+      expect(typeof module.formatResults).toBe("function");
     });
   });
 });

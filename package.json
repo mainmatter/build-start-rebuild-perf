@@ -19,7 +19,7 @@
     "start": "node ./bin/cli.js",
     "start:ember": "cd test-ember-app && pnpm start",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest --disable-console-intercept"
   },
   "dependencies": {
     "chrome-launcher": "^1.2.0",

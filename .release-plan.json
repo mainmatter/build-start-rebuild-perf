@@ -1,0 +1,26 @@
+{
+  "solution": {
+    "build-start-rebuild-perf": {
+      "impact": "patch",
+      "oldVersion": "0.0.0",
+      "newVersion": "0.0.1",
+      "tagName": "latest",
+      "constraints": [
+        {
+          "impact": "patch",
+          "reason": "Appears in changelog section :bug: Bug Fix"
+        },
+        {
+          "impact": "patch",
+          "reason": "Appears in changelog section :memo: Documentation"
+        },
+        {
+          "impact": "patch",
+          "reason": "Appears in changelog section :house: Internal"
+        }
+      ],
+      "pkgJSONPath": "./package.json"
+    }
+  },
+  "description": "## Release (2025-08-07)\n\n* build-start-rebuild-perf 0.0.1 (patch)\n\n#### :bug: Bug Fix\n* `build-start-rebuild-perf`\n  * [#12](https://github.com/mainmatter/build-start-rebuild-perf/pull/12) fix pnpm workspace ([@mansona](https://github.com/mansona))\n\n#### :memo: Documentation\n* `build-start-rebuild-perf`\n  * [#8](https://github.com/mainmatter/build-start-rebuild-perf/pull/8) Improve README ([@pichfl](https://github.com/pichfl))\n\n#### :house: Internal\n* `build-start-rebuild-perf`\n  * [#7](https://github.com/mainmatter/build-start-rebuild-perf/pull/7) Run tests in CI ([@pichfl](https://github.com/pichfl))\n  * [#6](https://github.com/mainmatter/build-start-rebuild-perf/pull/6) reset version in package.json ([@mansona](https://github.com/mansona))\n  * [#4](https://github.com/mainmatter/build-start-rebuild-perf/pull/4) start using release-plan ([@mansona](https://github.com/mansona))\n\n#### Committers: 2\n- Chris Manson ([@mansona](https://github.com/mansona))\n- Florian Pichler ([@pichfl](https://github.com/pichfl))\n"
+}

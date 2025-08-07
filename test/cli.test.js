@@ -29,7 +29,7 @@ describe("CLI Tests", () => {
             "./app/router.js",
           ],
           {
-            cwd: resolve(__dirname, "..", "test-ember-app"),
+            cwd: resolve(import.meta.dirname, "..", "test-ember-app"),
           },
         );
 

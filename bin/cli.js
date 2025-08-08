@@ -35,6 +35,7 @@ ${formatResults(results)}
   );
   process.exit(0);
 } catch (err) {
-  console.error("Measurement failed:", err.message);
+  console.error("Measurement failed");
+  console.error(err);
   process.exit(1);
 }

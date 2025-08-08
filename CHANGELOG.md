@@ -1,5 +1,16 @@
 # Changelog
 
+## Release (2025-08-08)
+
+* build-start-rebuild-perf 0.1.0 (minor)
+
+#### :rocket: Enhancement
+* `build-start-rebuild-perf`
+  * [#21](https://github.com/mainmatter/build-start-rebuild-perf/pull/21) Show stack on error. ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+
+#### Committers: 1
+- [@NullVoxPopuli](https://github.com/NullVoxPopuli)
+
 ## Release (2025-08-07)
 
 * build-start-rebuild-perf 0.0.1 (patch)

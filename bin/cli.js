@@ -36,6 +36,6 @@ ${formatResults(results)}
   process.exit(0);
 } catch (err) {
   console.error("Measurement failed");
-  console.error(err.stack);
+  console.error(err);
   process.exit(1);
 }

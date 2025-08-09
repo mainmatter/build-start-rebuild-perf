@@ -1,5 +1,16 @@
 # Changelog
 
+## Release (2025-08-09)
+
+* build-start-rebuild-perf 0.2.0 (minor)
+
+#### :rocket: Enhancement
+* `build-start-rebuild-perf`
+  * [#23](https://github.com/mainmatter/build-start-rebuild-perf/pull/23) Configurable timeout ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+
+#### Committers: 1
+- [@NullVoxPopuli](https://github.com/NullVoxPopuli)
+
 ## Release (2025-08-08)
 
 * build-start-rebuild-perf 0.1.0 (minor)

@@ -2,8 +2,8 @@
   "solution": {
     "build-start-rebuild-perf": {
       "impact": "minor",
-      "oldVersion": "0.0.1",
-      "newVersion": "0.1.0",
+      "oldVersion": "0.1.0",
+      "newVersion": "0.2.0",
       "tagName": "latest",
       "constraints": [
         {
@@ -14,5 +14,5 @@
       "pkgJSONPath": "./package.json"
     }
   },
-  "description": "## Release (2025-08-08)\n\n* build-start-rebuild-perf 0.1.0 (minor)\n\n#### :rocket: Enhancement\n* `build-start-rebuild-perf`\n  * [#21](https://github.com/mainmatter/build-start-rebuild-perf/pull/21) Show stack on error. ([@NullVoxPopuli](https://github.com/NullVoxPopuli))\n\n#### Committers: 1\n- [@NullVoxPopuli](https://github.com/NullVoxPopuli)\n"
+  "description": "## Release (2025-08-09)\n\n* build-start-rebuild-perf 0.2.0 (minor)\n\n#### :rocket: Enhancement\n* `build-start-rebuild-perf`\n  * [#23](https://github.com/mainmatter/build-start-rebuild-perf/pull/23) Configurable timeout ([@NullVoxPopuli](https://github.com/NullVoxPopuli))\n\n#### Committers: 1\n- [@NullVoxPopuli](https://github.com/NullVoxPopuli)\n"
 }

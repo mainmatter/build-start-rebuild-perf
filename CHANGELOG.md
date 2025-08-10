@@ -1,5 +1,16 @@
 # Changelog
 
+## Release (2025-08-10)
+
+* build-start-rebuild-perf 0.2.1 (patch)
+
+#### :bug: Bug Fix
+* `build-start-rebuild-perf`
+  * [#26](https://github.com/mainmatter/build-start-rebuild-perf/pull/26) The logLevel param is logLevel, not level ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+
+#### Committers: 1
+- [@NullVoxPopuli](https://github.com/NullVoxPopuli)
+
 ## Release (2025-08-09)
 
 * build-start-rebuild-perf 0.2.0 (minor)

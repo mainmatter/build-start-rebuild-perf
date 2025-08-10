@@ -9,7 +9,7 @@ program.parse();
 const options = program.opts();
 // get defaults like this: const DEFAULTS = program.options.map((option) => option.defaultValue);
 
-setLogLevel(options.level);
+setLogLevel(options.logLevel);
 
 ["SIGINT", "SIGTERM", "SIGQUIT"].forEach((signal) => {
   process.on(signal, async () => {

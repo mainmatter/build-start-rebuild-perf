@@ -1,5 +1,16 @@
 # Changelog
 
+## Release (2025-08-11)
+
+* build-start-rebuild-perf 0.2.2 (patch)
+
+#### :memo: Documentation
+* `build-start-rebuild-perf`
+  * [#31](https://github.com/mainmatter/build-start-rebuild-perf/pull/31) Add shoutout to Discorse for providing inspiration for this tool ([@pichfl](https://github.com/pichfl))
+
+#### Committers: 1
+- Florian Pichler ([@pichfl](https://github.com/pichfl))
+
 ## Release (2025-08-10)
 
 * build-start-rebuild-perf 0.2.1 (patch)

@@ -2,17 +2,17 @@
   "solution": {
     "build-start-rebuild-perf": {
       "impact": "patch",
-      "oldVersion": "0.2.0",
-      "newVersion": "0.2.1",
+      "oldVersion": "0.2.1",
+      "newVersion": "0.2.2",
       "tagName": "latest",
       "constraints": [
         {
           "impact": "patch",
-          "reason": "Appears in changelog section :bug: Bug Fix"
+          "reason": "Appears in changelog section :memo: Documentation"
         }
       ],
       "pkgJSONPath": "./package.json"
     }
   },
-  "description": "## Release (2025-08-10)\n\n* build-start-rebuild-perf 0.2.1 (patch)\n\n#### :bug: Bug Fix\n* `build-start-rebuild-perf`\n  * [#26](https://github.com/mainmatter/build-start-rebuild-perf/pull/26) The logLevel param is logLevel, not level ([@NullVoxPopuli](https://github.com/NullVoxPopuli))\n\n#### Committers: 1\n- [@NullVoxPopuli](https://github.com/NullVoxPopuli)\n"
+  "description": "## Release (2025-08-11)\n\n* build-start-rebuild-perf 0.2.2 (patch)\n\n#### :memo: Documentation\n* `build-start-rebuild-perf`\n  * [#31](https://github.com/mainmatter/build-start-rebuild-perf/pull/31) Add shoutout to Discorse for providing inspiration for this tool ([@pichfl](https://github.com/pichfl))\n\n#### Committers: 1\n- Florian Pichler ([@pichfl](https://github.com/pichfl))\n"
 }

@@ -6,7 +6,7 @@ Measures web app performance metrics:
 - Time to app load (waiting for an element selector)
 - Reload time after a file changes
 
-Thanks to [Discorse](https://github.com/discourse/discourse/blob/7729810716210a0354b3b4d40006c3b12a92d14d/vite-perf-test.mjs) for providing inspiration for this script.
+Thanks to [Discourse](https://github.com/discourse/discourse/blob/7729810716210a0354b3b4d40006c3b12a92d14d/vite-perf-test.mjs) for providing inspiration for this script.
 
 ## Usage
 

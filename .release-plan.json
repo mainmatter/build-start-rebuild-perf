@@ -2,8 +2,8 @@
   "solution": {
     "build-start-rebuild-perf": {
       "impact": "patch",
-      "oldVersion": "0.2.1",
-      "newVersion": "0.2.2",
+      "oldVersion": "0.2.2",
+      "newVersion": "0.2.3",
       "tagName": "latest",
       "constraints": [
         {
@@ -14,5 +14,5 @@
       "pkgJSONPath": "./package.json"
     }
   },
-  "description": "## Release (2025-08-11)\n\n* build-start-rebuild-perf 0.2.2 (patch)\n\n#### :memo: Documentation\n* `build-start-rebuild-perf`\n  * [#31](https://github.com/mainmatter/build-start-rebuild-perf/pull/31) Add shoutout to Discorse for providing inspiration for this tool ([@pichfl](https://github.com/pichfl))\n\n#### Committers: 1\n- Florian Pichler ([@pichfl](https://github.com/pichfl))\n"
+  "description": "## Release (2025-08-13)\n\n* build-start-rebuild-perf 0.2.3 (patch)\n\n#### :memo: Documentation\n* `build-start-rebuild-perf`\n  * [#34](https://github.com/mainmatter/build-start-rebuild-perf/pull/34) Fix typo in README.md ([@KevinBongart](https://github.com/KevinBongart))\n\n#### Committers: 1\n- Kevin Bongart ([@KevinBongart](https://github.com/KevinBongart))\n"
 }

@@ -1,5 +1,16 @@
 # Changelog
 
+## Release (2025-08-13)
+
+* build-start-rebuild-perf 0.2.3 (patch)
+
+#### :memo: Documentation
+* `build-start-rebuild-perf`
+  * [#34](https://github.com/mainmatter/build-start-rebuild-perf/pull/34) Fix typo in README.md ([@KevinBongart](https://github.com/KevinBongart))
+
+#### Committers: 1
+- Kevin Bongart ([@KevinBongart](https://github.com/KevinBongart))
+
 ## Release (2025-08-11)
 
 * build-start-rebuild-perf 0.2.2 (patch)

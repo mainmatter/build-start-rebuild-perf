@@ -2,9 +2,23 @@ import { resolve } from "node:path";
 import { execa } from "execa";
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
 
+/**
+ *
+ * @param {string[]} extraArgs an array of args to pass to the script
+ * @returns
+ */
+function runCommand(extraArgs) {
+  return execa("node", ["../bin/cli.js", "--command", "pnpm start", ...extraArgs], {
+    cwd: resolve(import.meta.dirname, "..", "test-ember-app"),
+  });
+}
+
 describe("CLI Tests", () => {
   describe(
     "Returns result for an Ember CLI app",
+    {
+      timeout: 120000,
+    },
     () => {
       const killStrays = async () => {
         try {
@@ -17,21 +31,7 @@ describe("CLI Tests", () => {
       afterEach(killStrays);
 
       it("should return measurements", async () => {
-        const cmd = await execa(
-          "node",
-          [
-            "../bin/cli.js",
-            "--command",
-            "pnpm start",
-            "--wait-for",
-            "h1",
-            "--file",
-            "./app/router.js",
-          ],
-          {
-            cwd: resolve(import.meta.dirname, "..", "test-ember-app"),
-          },
-        );
+        const cmd = await runCommand(["--wait-for", "h1", "--file", "./app/router.js"]);
 
         console.log(cmd.stdout);
         console.error(cmd.stderr);
@@ -42,9 +42,24 @@ describe("CLI Tests", () => {
           "| Dev Server Ready | First Paint | App Loaded | Reload after change |",
         );
       });
-    },
-    {
-      timeout: 120000,
+
+      it("should throw an error if --page-load-timeout is passed as something very low", async () => {
+        let cmd;
+        try {
+          cmd = await runCommand([
+            "--wait-for",
+            "h1",
+            "--file",
+            "./app/router.js",
+            "--page-load-timeout",
+            "100",
+          ]);
+        } catch (err) {
+          expect(err.stderr).toContain(`TimeoutError: Navigation timeout of 100 ms exceeded`);
+        }
+        // we expect the runCommand to throw. This is to make sure that we go into the catch block and don't "accidentally succeed"
+        expect(cmd).to.be.undefined;
+      });
     },
   );
 });

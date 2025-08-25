@@ -1,5 +1,16 @@
 # Changelog
 
+## Release (2025-08-25)
+
+* build-start-rebuild-perf 0.3.0 (minor)
+
+#### :rocket: Enhancement
+* `build-start-rebuild-perf`
+  * [#41](https://github.com/mainmatter/build-start-rebuild-perf/pull/41) add option to have a custom page-load-timeout ([@mansona](https://github.com/mansona))
+
+#### Committers: 1
+- Chris Manson ([@mansona](https://github.com/mansona))
+
 ## Release (2025-08-13)
 
 * build-start-rebuild-perf 0.2.3 (patch)

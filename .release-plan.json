@@ -1,18 +1,18 @@
 {
   "solution": {
     "build-start-rebuild-perf": {
-      "impact": "patch",
-      "oldVersion": "0.2.2",
-      "newVersion": "0.2.3",
+      "impact": "minor",
+      "oldVersion": "0.2.3",
+      "newVersion": "0.3.0",
       "tagName": "latest",
       "constraints": [
         {
-          "impact": "patch",
-          "reason": "Appears in changelog section :memo: Documentation"
+          "impact": "minor",
+          "reason": "Appears in changelog section :rocket: Enhancement"
         }
       ],
       "pkgJSONPath": "./package.json"
     }
   },
-  "description": "## Release (2025-08-13)\n\n* build-start-rebuild-perf 0.2.3 (patch)\n\n#### :memo: Documentation\n* `build-start-rebuild-perf`\n  * [#34](https://github.com/mainmatter/build-start-rebuild-perf/pull/34) Fix typo in README.md ([@KevinBongart](https://github.com/KevinBongart))\n\n#### Committers: 1\n- Kevin Bongart ([@KevinBongart](https://github.com/KevinBongart))\n"
+  "description": "## Release (2025-08-25)\n\n* build-start-rebuild-perf 0.3.0 (minor)\n\n#### :rocket: Enhancement\n* `build-start-rebuild-perf`\n  * [#41](https://github.com/mainmatter/build-start-rebuild-perf/pull/41) add option to have a custom page-load-timeout ([@mansona](https://github.com/mansona))\n\n#### Committers: 1\n- Chris Manson ([@mansona](https://github.com/mansona))\n"
 }

@@ -24,12 +24,14 @@ pnpm dlx build-start-rebuild-perf --file "app/router.js" --wait-for ".logo"
 ## Options
 
 ```
-	-u, --url <url>            URL to load (default: "http://localhost:4200")
-	-f, --file <path>          File to touch to trigger a reload (no default, but app/router.js is an option)
-	-c, --command <cmd>        Command to start dev server (default: "pnpm start")
-	-w, --wait-for <selector>  Element selector to wait for (default: "body")
-	-l, --log-level <level>    Set the log level (choices: "log", "warn", "error")
-	-h, --help                 display help for command
+	-u, --url <url>                   URL to load (default: "http://localhost:4200")
+  -f, --file <path>                 File to touch to trigger a reload (no default, but app/router.js is an option)
+  -c, --command <cmd>               Command to start dev server (default: "pnpm start")
+  -w, --wait-for <selector>         Element selector to wait for (default: "body")
+  -t, --timeout <timeout ms>        number of ms to wait for the server to become ready (default: "120000")
+  --page-load-timeout <timeout ms>  number of ms to wait in the browser for the pageload event (default: "60000")
+  -l, --log-level <level>           Set the log level (choices: "log", "warn", "error")
+  -h, --help                        display help for command
 ```
 
 ## Example Output

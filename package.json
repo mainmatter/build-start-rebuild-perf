@@ -22,11 +22,10 @@
     "test:watch": "vitest --disable-console-intercept"
   },
   "dependencies": {
-    "chrome-launcher": "^1.2.0",
     "commander": "^14.0.0",
     "execa": "^9.6.0",
     "markdown-table": "^3.0.4",
-    "puppeteer-core": "^24.16.0",
+    "puppeteer": "^24.17.0",
     "strip-ansi": "^7.1.0"
   },
   "devDependencies": {

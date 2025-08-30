@@ -1,3 +1,6 @@
 packages:
-  - '.'
-  - 'test-ember-app'
+  - .
+  - test-ember-app
+
+onlyBuiltDependencies:
+  - puppeteer

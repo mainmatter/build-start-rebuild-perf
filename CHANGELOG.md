@@ -1,5 +1,20 @@
 # Changelog
 
+## Release (2025-08-30)
+
+* build-start-rebuild-perf 0.4.0 (minor)
+
+#### :rocket: Enhancement
+* `build-start-rebuild-perf`
+  * [#43](https://github.com/mainmatter/build-start-rebuild-perf/pull/43) use standard puppeteer ([@mansona](https://github.com/mansona))
+
+#### :house: Internal
+* `build-start-rebuild-perf`
+  * [#44](https://github.com/mainmatter/build-start-rebuild-perf/pull/44) update biome schema to avoid warning ([@mansona](https://github.com/mansona))
+
+#### Committers: 1
+- Chris Manson ([@mansona](https://github.com/mansona))
+
 ## Release (2025-08-25)
 
 * build-start-rebuild-perf 0.3.0 (minor)

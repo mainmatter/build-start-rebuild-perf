@@ -1,0 +1,7 @@
+# Unlabeled Changes
+
+* `build-start-rebuild-perf`
+  * [#49](https://github.com/mainmatter/build-start-rebuild-perf/pull/49) Disable thousands separator for clearness ([@BlueCutOfficial](https://github.com/BlueCutOfficial))
+
+
+*Cannot plan release until the above changes are labeled*.

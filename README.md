@@ -41,7 +41,7 @@ pnpm dlx build-start-rebuild-perf --file "app/router.js" --wait-for ".logo"
 
 | Dev Server Ready | First Paint | App Loaded | Reload after change |
 | ---------------- | ----------- | ---------- | ------------------- |
-| 5,523 ms         | 5,618 ms    | 6,142 ms   | 918 ms              |
+| 5523 ms          | 5618 ms     | 6142 ms    | 918 ms              |
 ```
 
 ## Share with us

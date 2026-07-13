@@ -1,5 +1,33 @@
 # Changelog
 
+## Release (2026-07-13)
+
+* build-start-rebuild-perf 0.4.0 (minor)
+
+#### :rocket: Enhancement
+* `build-start-rebuild-perf`
+  * [#53](https://github.com/mainmatter/build-start-rebuild-perf/pull/53) Fix waitForPageToLoad behavior ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+  * [#49](https://github.com/mainmatter/build-start-rebuild-perf/pull/49) Disable thousands separator for clearness ([@BlueCutOfficial](https://github.com/BlueCutOfficial))
+  * [#43](https://github.com/mainmatter/build-start-rebuild-perf/pull/43) use standard puppeteer ([@mansona](https://github.com/mansona))
+
+#### :bug: Bug Fix
+* `build-start-rebuild-perf`
+  * [#54](https://github.com/mainmatter/build-start-rebuild-perf/pull/54) Upgrade puppeteer so that tests pass ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+
+#### :house: Internal
+* `build-start-rebuild-perf`
+  * [#66](https://github.com/mainmatter/build-start-rebuild-perf/pull/66) chore: update release-plan ([@BobrImperator](https://github.com/BobrImperator))
+  * [#57](https://github.com/mainmatter/build-start-rebuild-perf/pull/57) stop running renovate on unpublished test app ([@mansona](https://github.com/mansona))
+  * [#55](https://github.com/mainmatter/build-start-rebuild-perf/pull/55) make package.json licence match project licence ([@mansona](https://github.com/mansona))
+  * [#56](https://github.com/mainmatter/build-start-rebuild-perf/pull/56) prevent version mismatch for puppeteer chrome install on CI ([@mansona](https://github.com/mansona))
+  * [#44](https://github.com/mainmatter/build-start-rebuild-perf/pull/44) update biome schema to avoid warning ([@mansona](https://github.com/mansona))
+
+#### Committers: 4
+- Bartlomiej Dudzik ([@BobrImperator](https://github.com/BobrImperator))
+- Chris Manson ([@mansona](https://github.com/mansona))
+- Marine Dunstetter ([@BlueCutOfficial](https://github.com/BlueCutOfficial))
+- [@NullVoxPopuli](https://github.com/NullVoxPopuli)
+
 ## Release (2025-08-25)
 
 * build-start-rebuild-perf 0.3.0 (minor)

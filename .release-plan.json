@@ -2,17 +2,25 @@
   "solution": {
     "build-start-rebuild-perf": {
       "impact": "minor",
-      "oldVersion": "0.2.3",
-      "newVersion": "0.3.0",
+      "oldVersion": "0.3.0",
+      "newVersion": "0.4.0",
       "tagName": "latest",
       "constraints": [
         {
           "impact": "minor",
           "reason": "Appears in changelog section :rocket: Enhancement"
+        },
+        {
+          "impact": "patch",
+          "reason": "Appears in changelog section :bug: Bug Fix"
+        },
+        {
+          "impact": "patch",
+          "reason": "Appears in changelog section :house: Internal"
         }
       ],
       "pkgJSONPath": "./package.json"
     }
   },
-  "description": "## Release (2025-08-25)\n\n* build-start-rebuild-perf 0.3.0 (minor)\n\n#### :rocket: Enhancement\n* `build-start-rebuild-perf`\n  * [#41](https://github.com/mainmatter/build-start-rebuild-perf/pull/41) add option to have a custom page-load-timeout ([@mansona](https://github.com/mansona))\n\n#### Committers: 1\n- Chris Manson ([@mansona](https://github.com/mansona))\n"
+  "description": "## Release (2026-07-13)\n\n* build-start-rebuild-perf 0.4.0 (minor)\n\n#### :rocket: Enhancement\n* `build-start-rebuild-perf`\n  * [#53](https://github.com/mainmatter/build-start-rebuild-perf/pull/53) Fix waitForPageToLoad behavior ([@NullVoxPopuli](https://github.com/NullVoxPopuli))\n  * [#49](https://github.com/mainmatter/build-start-rebuild-perf/pull/49) Disable thousands separator for clearness ([@BlueCutOfficial](https://github.com/BlueCutOfficial))\n  * [#43](https://github.com/mainmatter/build-start-rebuild-perf/pull/43) use standard puppeteer ([@mansona](https://github.com/mansona))\n\n#### :bug: Bug Fix\n* `build-start-rebuild-perf`\n  * [#54](https://github.com/mainmatter/build-start-rebuild-perf/pull/54) Upgrade puppeteer so that tests pass ([@NullVoxPopuli](https://github.com/NullVoxPopuli))\n\n#### :house: Internal\n* `build-start-rebuild-perf`\n  * [#66](https://github.com/mainmatter/build-start-rebuild-perf/pull/66) chore: update release-plan ([@BobrImperator](https://github.com/BobrImperator))\n  * [#57](https://github.com/mainmatter/build-start-rebuild-perf/pull/57) stop running renovate on unpublished test app ([@mansona](https://github.com/mansona))\n  * [#55](https://github.com/mainmatter/build-start-rebuild-perf/pull/55) make package.json licence match project licence ([@mansona](https://github.com/mansona))\n  * [#56](https://github.com/mainmatter/build-start-rebuild-perf/pull/56) prevent version mismatch for puppeteer chrome install on CI ([@mansona](https://github.com/mansona))\n  * [#44](https://github.com/mainmatter/build-start-rebuild-perf/pull/44) update biome schema to avoid warning ([@mansona](https://github.com/mansona))\n\n#### Committers: 4\n- Bartlomiej Dudzik ([@BobrImperator](https://github.com/BobrImperator))\n- Chris Manson ([@mansona](https://github.com/mansona))\n- Marine Dunstetter ([@BlueCutOfficial](https://github.com/BlueCutOfficial))\n- [@NullVoxPopuli](https://github.com/NullVoxPopuli)\n"
 }
